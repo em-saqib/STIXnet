@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Large model artifacts (regenerate via training scripts)
+Entity-Extraction/rcATT/Models/tactics.joblib
+Entity-Extraction/rcATT/Models/techniques.joblib
+
+# Large datasets (store externally, e.g. figshare)
+Entity-Extraction/rcATT/Dataset.csv
+Entity-Extraction/rcATT/Dataset-Creation/enterprise-attack.json
+Entity-Extraction/rcATT/Dataset-Creation/URL_Content/

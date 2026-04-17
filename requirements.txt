@@ -7,5 +7,5 @@ nltk
 pandas
 pyparsing==3.0.7
 requests
-sklearn
+scikit-learn
 trafilatura

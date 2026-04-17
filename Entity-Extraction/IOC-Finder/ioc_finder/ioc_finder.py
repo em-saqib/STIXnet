@@ -8,7 +8,8 @@ import ioc_fanger
 from d8s_strings import string_remove_from_end
 from pyparsing import ParseResults, Located
 
-from ioc_finder import ioc_grammars
+# from ioc_finder import ioc_grammars
+from . import ioc_grammars
 
 
 def _deduplicate(indicator_list: List) -> List:
@@ -19,7 +20,7 @@ def _deduplicate(indicator_list: List) -> List:
 def _listify_with_get_position(indicator_list: ParseResults,text:str) -> List:
     """Convert the multi-dimensional list into a one-dimensional list with empty entries and duplicates removed."""
     #dedup = _deduplicate([indicator[0][1] for indicator in indicator_list if indicator[0]])
-    
+
 
     pos_map = {}
     to_dedup = []
@@ -37,7 +38,7 @@ def _listify_with_get_position(indicator_list: ParseResults,text:str) -> List:
                 else:
                     tmp_pos=x+len(indicator[0])
                     pos_map[indicator[0]]=[[x,tmp_pos]]
-    return _deduplicate(to_dedup), pos_map 
+    return _deduplicate(to_dedup), pos_map
 
 def _listify(indicator_list: ParseResults) -> List:
     """Convert the multi-dimensional list into a one-dimensional list with empty entries and duplicates removed."""
@@ -333,7 +334,7 @@ def digits_of(n):
 def is_valid_credit_card(credit_card):
     credit_card=credit_card.replace('-','').replace(' ','')
     try:
-        
+
         digits = digits_of(credit_card)
         odd_digits = digits[-1::-2]
         even_digits = digits[-2::-2]
@@ -469,6 +470,7 @@ def cli_find_iocs(
         parse_authentihashes=not no_authentihashes,
     )
     ioc_string = json.dumps(iocs, indent=4, sort_keys=True)
+    click.echo(ioc_string)
 
 
 def find_iocs(  # noqa: CCR001 pylint: disable=R0912,R0915
