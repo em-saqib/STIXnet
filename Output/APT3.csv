@@ -1,0 +1,36 @@
+src_type,src_value,relationship,dst_type,dst_value,sentence
+attack-pattern,T1098 (Account Manipulation),targets,location,Maine,"This group is responsible for the campaigns known as Operation Clandestine Fox, Operation Clandestine Wolf, and Operation Double Tap."
+attack-pattern,T1546 (Event Triggered Execution),targets,location,Maine,"This group is responsible for the campaigns known as Operation Clandestine Fox, Operation Clandestine Wolf, and Operation Double Tap."
+attack-pattern,T1136 (Create Account),targets,location,Maine,"This group is responsible for the campaigns known as Operation Clandestine Fox, Operation Clandestine Wolf, and Operation Double Tap."
+attack-pattern,T1069 (Permission Groups Discovery),targets,location,Maine,"This group is responsible for the campaigns known as Operation Clandestine Fox, Operation Clandestine Wolf, and Operation Double Tap."
+attack-pattern,T1608 (Stage Capabilities),targets,location,Maine,"This group is responsible for the campaigns known as Operation Clandestine Fox, Operation Clandestine Wolf, and Operation Double Tap."
+attack-pattern,T1098 (Account Manipulation),targets,location,Hong Kong,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+attack-pattern,T1098 (Account Manipulation),targets,location,United States,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+attack-pattern,T1546 (Event Triggered Execution),targets,location,Hong Kong,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+attack-pattern,T1546 (Event Triggered Execution),targets,location,United States,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+attack-pattern,T1136 (Create Account),targets,location,Hong Kong,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+attack-pattern,T1136 (Create Account),targets,location,United States,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+attack-pattern,T1069 (Permission Groups Discovery),targets,location,Hong Kong,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+attack-pattern,T1069 (Permission Groups Discovery),targets,location,United States,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+attack-pattern,T1608 (Stage Capabilities),targets,location,Hong Kong,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+attack-pattern,T1608 (Stage Capabilities),targets,location,United States,"As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong."
+vulnerability,CVE-2015-3113,targeted-by,attack-pattern,T1098 (Account Manipulation),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+vulnerability,CVE-2015-3113,targeted-by,attack-pattern,T1546 (Event Triggered Execution),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+vulnerability,CVE-2015-3113,targeted-by,attack-pattern,T1136 (Create Account),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+vulnerability,CVE-2015-3113,targeted-by,attack-pattern,T1069 (Permission Groups Discovery),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+vulnerability,CVE-2015-3113,targeted-by,attack-pattern,T1608 (Stage Capabilities),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+vulnerability,CVE-2014-1776,targeted-by,attack-pattern,T1098 (Account Manipulation),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+vulnerability,CVE-2014-1776,targeted-by,attack-pattern,T1546 (Event Triggered Execution),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+vulnerability,CVE-2014-1776,targeted-by,attack-pattern,T1136 (Create Account),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+vulnerability,CVE-2014-1776,targeted-by,attack-pattern,T1069 (Permission Groups Discovery),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+vulnerability,CVE-2014-1776,targeted-by,attack-pattern,T1608 (Stage Capabilities),APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1098 (Account Manipulation),targets,vulnerability,CVE-2015-3113,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1098 (Account Manipulation),targets,vulnerability,CVE-2014-1776,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1546 (Event Triggered Execution),targets,vulnerability,CVE-2015-3113,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1546 (Event Triggered Execution),targets,vulnerability,CVE-2014-1776,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1136 (Create Account),targets,vulnerability,CVE-2015-3113,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1136 (Create Account),targets,vulnerability,CVE-2014-1776,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1069 (Permission Groups Discovery),targets,vulnerability,CVE-2015-3113,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1069 (Permission Groups Discovery),targets,vulnerability,CVE-2014-1776,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1608 (Stage Capabilities),targets,vulnerability,CVE-2015-3113,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.
+attack-pattern,T1608 (Stage Capabilities),targets,vulnerability,CVE-2014-1776,APT3 has exploited the Adobe Flash Player vulnerability CVE-2015-3113 and Internet Explorer vulnerability CVE-2014-1776.

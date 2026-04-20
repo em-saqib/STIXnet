@@ -42,11 +42,16 @@ cd "$BASEDIR"
 python3 Entity-Extraction/rcATT/predict.py "$REPORT" 2>&1 | grep -v Warning | grep -v warn
 
 echo ""
-echo ">>> STEP 4: Relation Extraction (STIX Relationship Rules)"
+echo ">>> STEP 4a: Regenerate STIX relationship schema (Relations.csv)"
 echo "------------------------------------------------------------"
 cd "$BASEDIR"
 python3 Relation-Extraction/relationsConversion.py 2>&1 | grep -v nltk_data
 echo "  Relations.csv generated ($(wc -l < Relation-Extraction/Relations.csv) rules)"
+
+echo ""
+echo ">>> STEP 4b: Extract per-report STIX relations"
+echo "------------------------------------------------------------"
+python3 Relation-Extraction/extract_relations.py "$REPORT" 2>&1 | grep -v nltk_data
 
 echo ""
 echo "============================================================"
